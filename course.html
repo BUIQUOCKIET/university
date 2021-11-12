@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University-Mine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="" class="logo-link">
+                <img src="./assets/images/logo.png" alt="" class="logo__img">
+            </a>
+            <div class="nav-links" id="NavLinks">
+                <i class="fas fa-times icon__close" onclick="HideMenu()"></i>
+                <ul class="list-menu">
+                    <li class="menu-item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu-item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu-item"><a href="course.html" class="menu__link">Course</a></li>
+                    <li class="menu-item"><a href="blog.html" class="menu__link">Blog</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="overlay" id="Overlay" onclick="HideMenu()"></div>
+            <i class="fas fa-bars icon__open" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="text-box__title about-text__title">Our Course</h1>
+        </div>
+    </section>
+
+    <!-- Course -->
+    <section class="course">
+        <h3 class="text__heading">Course We Offer</h3>
+        <p class="text__sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h4 class="text__name">Intermediate</h4>
+                <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h4 class="text__name">Degree</h4>
+                <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h4 class="text__name">Post Graduation</h4>
+                <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Facilities -->
+        <section class="facilities">
+            <h3 class="text__heading">Our Global Campus</h3>
+            <p class="text__sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="./assets/images/basketball.png" alt="" class="facility__img">
+                    <div class="facility-body">
+                        <h4 class="text__name">World Class library</h4>
+                        <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                    </div>
+                </div>
+                <div class="facility-col">
+                    <img src="./assets/images/cafeteria.png" alt="" class="facility__img">
+                    <div class="facility-body">
+                        <h4 class="text__name">World Class library</h4>
+                        <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                    </div>
+                </div>
+                <div class="facility-col">
+                    <img src="./assets/images/library.png" alt="" class="facility__img">
+                    <div class="facility-body">
+                        <h4 class="text__name">World Class library</h4>
+                        <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4 class="footer__heading">About Us</h4>
+        <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus pures.</p>
+            <div class="footer-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p class="footer-copy-right">Made width<i class="far fa-heart"></i>by Easy Tutorials</p>
+    </section>
+
+    <script>
+
+        var NavLinks = document.getElementById('NavLinks');
+        var Overlay = document.getElementById('Overlay');
+
+        function ShowMenu() {
+            NavLinks.style.right = "0";
+            Overlay.style.display = "block";
+        }
+
+        function HideMenu() {
+            NavLinks.style.right = "-230px";
+            Overlay.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>

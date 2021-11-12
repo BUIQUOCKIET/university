@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University-Mine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="" class="logo-link">
+                <img src="./assets/images/logo.png" alt="" class="logo__img">
+            </a>
+            <div class="nav-links" id="NavLinks">
+                <i class="fas fa-times icon__close" onclick="HideMenu()"></i>
+                <ul class="list-menu">
+                    <li class="menu-item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu-item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu-item"><a href="course.html" class="menu__link">Course</a></li>
+                    <li class="menu-item"><a href="blog.html" class="menu__link">Blog</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="overlay" id="Overlay" onclick="HideMenu()"></div>
+            <i class="fas fa-bars icon__open" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="text-box__title about-text__title">Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15714.267112852356!2d105.7727046!3d10.052562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bff806f3142bf87!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyAtIEvhu7kgdGh14bqtdCBD4bqnbiBUaMah!5e0!3m2!1svi!2s!4v1624465624053!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="row">
+            <div class="contact-left">
+                <div class="contact-info">
+                    <i class="fas fa-home"></i>
+                    <div class="contact-body">
+                        <h3 class="contact-body__name">Trường Cao đẳng Kinh tế - Kỹ thuật Cần Thơ</h3>
+                        <p class="contact-body__des">Banga lore, Karnataka, IN</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-body">
+                        <h3 class="contact-body__name">+1 0123456789</h3>
+                        <p class="contact-body__des">Monday to Saturday, 10AM to 6PM</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-body">
+                        <h3 class="contact-body__name">info@easytutorialspro.com</h3>
+                        <p class="contact-body__des">Email us your query</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form class="contact-form">
+                    <input type="text" name="" placeholder="Enter your name" id="" class="contact-form__input">
+                    <input type="email" name="" placeholder="Enter email address" id="" class="contact-form__input">
+                    <input type="text" name="" placeholder="Enter your object" id="" class="contact-form__input">
+                    <textarea name="" id="" cols="30" rows="8" placeholder="Message" class="contact-form__input"></textarea>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4 class="footer__heading">About Us</h4>
+        <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus pures.</p>
+            <div class="footer-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p class="footer-copy-right">Made width<i class="far fa-heart"></i>by Easy Tutorials</p>
+    </section>
+
+    <script>
+
+        var NavLinks = document.getElementById('NavLinks');
+        var Overlay = document.getElementById('Overlay');
+
+        function ShowMenu() {
+            NavLinks.style.right = "0";
+            Overlay.style.display = "block";
+        }
+
+        function HideMenu() {
+            NavLinks.style.right = "-230px";
+            Overlay.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>

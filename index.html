@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University-Mine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="" class="logo-link">
+                <img src="./assets/images/logo.png" alt="" class="logo__img">
+            </a>
+            <div class="nav-links" id="NavLinks">
+                <i class="fas fa-times icon__close" onclick="HideMenu()"></i>
+                <ul class="list-menu">
+                    <li class="menu-item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu-item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu-item"><a href="course.html" class="menu__link">Course</a></li>
+                    <li class="menu-item"><a href="blog.html" class="menu__link">Blog</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="overlay" id="Overlay" onclick="HideMenu()"></div>
+            <i class="fas fa-bars icon__open" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="text-box__title">World's Biggest University</h1>
+            <p class="text-box__sub">Making website is now one of the easiest thing in the world. you just need to learn HTML, CSS,<br>
+                Javascript and you are good to go.</p>
+            <a href="" class="btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+    <!-- Course -->
+    <section class="course">
+        <h3 class="text__heading">Course We Offer</h3>
+        <p class="text__sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h4 class="text__name">Intermediate</h4>
+                <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h4 class="text__name">Degree</h4>
+                <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h4 class="text__name">Post Graduation</h4>
+                <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus -->
+    <section class="campus">
+        <h3 class="text__heading">Our Global Campus</h3>
+        <p class="text__sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="./assets/images/london.png" alt="" class="campus__img">
+                <div class="layer">
+                    <h3 class="layer__name">LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="./assets/images/newyork.png" alt="" class="campus__img">
+                <div class="layer">
+                    <h3 class="layer__name">NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="./assets/images/washington.png" alt="" class="campus__img">
+                <div class="layer">
+                    <h3 class="layer__name">WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h3 class="text__heading">Our Global Campus</h3>
+        <p class="text__sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="./assets/images/basketball.png" alt="" class="facility__img">
+                <div class="facility-body">
+                    <h4 class="text__name">World Class library</h4>
+                    <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+            <div class="facility-col">
+                <img src="./assets/images/cafeteria.png" alt="" class="facility__img">
+                <div class="facility-body">
+                    <h4 class="text__name">World Class library</h4>
+                    <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+            <div class="facility-col">
+                <img src="./assets/images/library.png" alt="" class="facility__img">
+                <div class="facility-body">
+                    <h4 class="text__name">World Class library</h4>
+                    <p class="text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h3 class="text__heading">What Our Student Says</h3>
+        <p class="text__sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="./assets/images/user1.jpg" alt="" class="testimonial__img">
+                <div class="testimonial-body">
+                    <p class="testimonial-speech">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus pures.</p>
+                    <h4 class="text__name">Christine Berkley</h4>
+                    <div class="rating-bar">
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star-half-alt rating-bar--checked"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="./assets/images/user2.jpg" alt="" class="testimonial__img">
+                <div class="testimonial-body">
+                    <p class="testimonial-speech">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus pures.</p>
+                    <h4 class="text__name">David Byer</h4>
+                    <div class="rating-bar">
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star rating-bar--checked"></i>
+                        <i class="fas fa-star-half-alt rating-bar--checked"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action -->
+    <section class="action">
+        <h1 class="action__text">Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+        <a href="" class="btn">CONTAC US</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4 class="footer__heading">About Us</h4>
+        <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus pures.</p>
+            <div class="footer-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p class="footer-copy-right">Made width<i class="far fa-heart"></i>by Easy Tutorials</p>
+    </section>
+
+    <script>
+
+        var NavLinks = document.getElementById('NavLinks');
+        var Overlay = document.getElementById('Overlay');
+
+        function ShowMenu() {
+            NavLinks.style.right = "0";
+            Overlay.style.display = "block";
+        }
+
+        function HideMenu() {
+            NavLinks.style.right = "-230px";
+            Overlay.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
